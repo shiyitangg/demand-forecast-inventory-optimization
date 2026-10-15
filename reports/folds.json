@@ -1,0 +1,42 @@
+[
+  {
+    "fold": 1,
+    "train_end": 261,
+    "test_start": 261,
+    "test_end": 265,
+    "use_for_tuning": true,
+    "test_first_week": 11601,
+    "test_last_week": 11604,
+    "test_start_date": "2016-01-30"
+  },
+  {
+    "fold": 2,
+    "train_end": 265,
+    "test_start": 265,
+    "test_end": 269,
+    "use_for_tuning": true,
+    "test_first_week": 11605,
+    "test_last_week": 11608,
+    "test_start_date": "2016-02-27"
+  },
+  {
+    "fold": 3,
+    "train_end": 269,
+    "test_start": 269,
+    "test_end": 273,
+    "use_for_tuning": true,
+    "test_first_week": 11609,
+    "test_last_week": 11612,
+    "test_start_date": "2016-03-26"
+  },
+  {
+    "fold": 4,
+    "train_end": 273,
+    "test_start": 273,
+    "test_end": 277,
+    "use_for_tuning": false,
+    "test_first_week": 11613,
+    "test_last_week": 11616,
+    "test_start_date": "2016-04-23"
+  }
+]

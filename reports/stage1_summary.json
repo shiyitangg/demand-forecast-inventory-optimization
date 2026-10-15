@@ -1,0 +1,41 @@
+{
+  "n_days": 1941,
+  "first_day": "2011-01-29",
+  "last_day": "2016-05-22",
+  "n_weeks_total": 278,
+  "n_partial_weeks_dropped": 1,
+  "partial_weeks_dropped": [
+    11617
+  ],
+  "n_missing_daily_values": 0,
+  "n_negative_daily_values": 0,
+  "n_series": 30490,
+  "n_full_weeks": 277,
+  "n_rows_weekly": 8445730,
+  "first_full_week": 11101,
+  "last_full_week": 11616,
+  "zero_share_all_weeks": 0.3974,
+  "zero_share_after_first_sale": 0.2388,
+  "zero_share_after_first_sale_by_category": {
+    "FOODS": 0.2001,
+    "HOBBIES": 0.2952,
+    "HOUSEHOLD": 0.2601
+  },
+  "leading_zero_share": 0.2083,
+  "price_missing_share": 0.208,
+  "weeks_with_sales_but_no_price": 0,
+  "series_never_sold": 0,
+  "demand_class_counts_pre_test": {
+    "erratic": 1869,
+    "insufficient": 16,
+    "intermittent": 10383,
+    "lumpy": 2498,
+    "smooth": 15724
+  },
+  "weekly_sales_quantiles": {
+    "0.5": 3.0,
+    "0.9": 23.0,
+    "0.99": 107.0
+  },
+  "weekly_sales_max": 3539
+}
