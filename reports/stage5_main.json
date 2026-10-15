@@ -1,0 +1,94 @@
+{
+  "bootstrap_C_vs_B": {
+    "rel_diff": 0.0425029497954863,
+    "ci_low": 0.0381193282906695,
+    "ci_high": 0.046667624440315025,
+    "share_a_lower": 0.0,
+    "n_series": 30479,
+    "n_boot": 1000
+  },
+  "bootstrap_C_vs_A": {
+    "rel_diff": -0.08559059897030319,
+    "ci_low": -0.09099687241850159,
+    "ci_high": -0.0800339245585585,
+    "share_a_lower": 1.0,
+    "n_series": 30479,
+    "n_boot": 1000
+  },
+  "assumptions": {
+    "lead_time_weeks": 2,
+    "review_weeks": 1,
+    "cost_ratio_lost_to_holding": 9,
+    "holding_rate_weekly_share_of_price": 0.004807692307692308,
+    "fixed_safety_weeks_policy_A": 1.0,
+    "lost_sales": true
+  },
+  "metrics": [
+    {
+      "tau": 0.9,
+      "policy": "A_ma4_fixed_ss",
+      "period": "all",
+      "total_cost": 137293.1634,
+      "holding_cost": 87249.9168,
+      "lost_sales_cost": 50043.2466,
+      "fill_rate": 0.9166,
+      "stockout_week_share": 0.1375,
+      "days_of_inventory": 9.6972
+    },
+    {
+      "tau": 0.9,
+      "policy": "A_ma4_fixed_ss",
+      "period": "holdout_weeks",
+      "total_cost": 38528.2545,
+      "holding_cost": 25954.4449,
+      "lost_sales_cost": 12573.8096,
+      "fill_rate": 0.9321,
+      "stockout_week_share": 0.123,
+      "days_of_inventory": 9.8782
+    },
+    {
+      "tau": 0.9,
+      "policy": "B_normal_ss",
+      "period": "all",
+      "total_cost": 120423.7929,
+      "holding_cost": 81368.6409,
+      "lost_sales_cost": 39055.1519,
+      "fill_rate": 0.9311,
+      "stockout_week_share": 0.0947,
+      "days_of_inventory": 8.8046
+    },
+    {
+      "tau": 0.9,
+      "policy": "B_normal_ss",
+      "period": "holdout_weeks",
+      "total_cost": 33689.6365,
+      "holding_cost": 23200.6539,
+      "lost_sales_cost": 10488.9826,
+      "fill_rate": 0.9404,
+      "stockout_week_share": 0.0897,
+      "days_of_inventory": 8.4717
+    },
+    {
+      "tau": 0.9,
+      "policy": "C_quantile",
+      "period": "all",
+      "total_cost": 125542.1593,
+      "holding_cost": 99647.6097,
+      "lost_sales_cost": 25894.5496,
+      "fill_rate": 0.9535,
+      "stockout_week_share": 0.0598,
+      "days_of_inventory": 10.6605
+    },
+    {
+      "tau": 0.9,
+      "policy": "C_quantile",
+      "period": "holdout_weeks",
+      "total_cost": 35125.7994,
+      "holding_cost": 28180.2233,
+      "lost_sales_cost": 6945.5761,
+      "fill_rate": 0.9595,
+      "stockout_week_share": 0.0572,
+      "days_of_inventory": 10.1853
+    }
+  ]
+}
