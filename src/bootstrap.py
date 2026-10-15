@@ -27,3 +27,28 @@ def paired_bootstrap_wape_diff(abs_a, abs_b, actual, n_boot=1000, seed=0, batch=
         "n_series": int(n),
         "n_boot": int(n_boot),
     }
+
+
+def paired_bootstrap_total_ratio(a, b, n_boot=1000, seed=0, batch=50):
+    """Relative difference sum(a) / sum(b) - 1, resampling series with replacement.
+
+    Negative values mean method a has the lower total (e.g. lower cost).
+    """
+    a, b = np.asarray(a, dtype=np.float64), np.asarray(b, dtype=np.float64)
+    n = len(a)
+    rng = np.random.default_rng(seed)
+    stats = []
+    for start in range(0, n_boot, batch):
+        k = min(batch, n_boot - start)
+        idx = rng.integers(0, n, size=(k, n))
+        stats.append(a[idx].sum(axis=1) / b[idx].sum(axis=1) - 1)
+    stats = np.concatenate(stats)
+    lo, hi = np.quantile(stats, [0.025, 0.975])
+    return {
+        "rel_diff": float(a.sum() / b.sum() - 1),
+        "ci_low": float(lo),
+        "ci_high": float(hi),
+        "share_a_lower": float(np.mean(stats < 0)),
+        "n_series": int(n),
+        "n_boot": int(n_boot),
+    }

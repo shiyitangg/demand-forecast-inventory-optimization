@@ -37,3 +37,19 @@ LGBM_PARAMS = {
 }
 BASELINE_FOR_COMPARISON = "ma_4"  # best baseline on tuning folds in stage 2
 N_BOOT = 1000
+
+# Stage 4: quantile forecasts of cumulative demand over k = L + R weeks.
+# Weekly review (R = 1) and assumed lead times L in LEAD_TIMES; L = 2 is the
+# main case. M5 has no lead-time data, so these are assumptions.
+REVIEW_WEEKS = 1
+LEAD_TIMES = [1, 2, 3]
+MAIN_LEAD_TIME = 2
+QUANTILES = [0.5, 0.7, 0.8, 0.9, 0.95, 0.98]
+N_TRAIN_ORIGINS_Q = 26
+Q_NUM_ROUNDS = 300
+
+# Stage 5: inventory simulation (all values are assumptions, not M5 data).
+HOLDING_RATE_WEEKLY = 0.25 / 52  # holding cost per unit-week as a share of price
+MAIN_COST_RATIO = 9  # lost-sale cost / holding cost; critical ratio 0.9
+COST_RATIOS = [4, 9, 19, 49]  # critical ratios 0.8, 0.9, 0.95, 0.98
+FIXED_SAFETY_WEEKS = 1.0  # policy A: safety stock = this many weeks of MA4 demand
