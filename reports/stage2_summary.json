@@ -1,0 +1,94 @@
+{
+  "tuning_folds_mean": {
+    "croston": {
+      "wape": 0.441,
+      "rmsse_mean": 0.8386,
+      "rmsse_weighted": 0.9683
+    },
+    "ma_13": {
+      "wape": 0.4263,
+      "rmsse_mean": 0.8136,
+      "rmsse_weighted": 0.9442
+    },
+    "ma_26": {
+      "wape": 0.4388,
+      "rmsse_mean": 0.8296,
+      "rmsse_weighted": 0.982
+    },
+    "ma_4": {
+      "wape": 0.395,
+      "rmsse_mean": 0.7929,
+      "rmsse_weighted": 0.9147
+    },
+    "ma_8": {
+      "wape": 0.4095,
+      "rmsse_mean": 0.7971,
+      "rmsse_weighted": 0.9192
+    },
+    "naive": {
+      "wape": 0.437,
+      "rmsse_mean": 0.9047,
+      "rmsse_weighted": 1.0161
+    },
+    "seasonal_naive": {
+      "wape": 0.643,
+      "rmsse_mean": 1.1792,
+      "rmsse_weighted": 1.4809
+    },
+    "tsb": {
+      "wape": 0.4114,
+      "rmsse_mean": 0.7954,
+      "rmsse_weighted": 0.925
+    }
+  },
+  "holdout_fold": {
+    "naive": {
+      "wape": 0.4176,
+      "rmsse_mean": 0.9233,
+      "rmsse_weighted": 0.9414
+    },
+    "seasonal_naive": {
+      "wape": 0.5995,
+      "rmsse_mean": 1.1824,
+      "rmsse_weighted": 1.449
+    },
+    "ma_4": {
+      "wape": 0.3794,
+      "rmsse_mean": 0.8027,
+      "rmsse_weighted": 0.8602
+    },
+    "ma_8": {
+      "wape": 0.3858,
+      "rmsse_mean": 0.7986,
+      "rmsse_weighted": 0.8697
+    },
+    "ma_13": {
+      "wape": 0.3988,
+      "rmsse_mean": 0.8116,
+      "rmsse_weighted": 0.894
+    },
+    "ma_26": {
+      "wape": 0.4141,
+      "rmsse_mean": 0.8341,
+      "rmsse_weighted": 0.953
+    },
+    "croston": {
+      "wape": 0.4024,
+      "rmsse_mean": 0.8184,
+      "rmsse_weighted": 0.9214
+    },
+    "tsb": {
+      "wape": 0.3862,
+      "rmsse_mean": 0.7944,
+      "rmsse_weighted": 0.8782
+    }
+  },
+  "selected_ma_window_by_tuning_wape": "ma_4",
+  "best_baseline_by_tuning_wape": "ma_4",
+  "n_series_evaluated_per_fold": {
+    "1": 30479,
+    "2": 30490,
+    "3": 30490,
+    "4": 30490
+  }
+}
