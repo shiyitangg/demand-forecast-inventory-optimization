@@ -1,0 +1,46 @@
+[
+  {
+    "wape_diff": -0.011782895235359362,
+    "ci_low": -0.016419132890747545,
+    "ci_high": -0.006877795784137645,
+    "share_a_better": 1.0,
+    "n_series": 30479,
+    "n_boot": 1000,
+    "fold": 1,
+    "use_for_tuning": true,
+    "baseline": "ma_4"
+  },
+  {
+    "wape_diff": -0.02393821631046627,
+    "ci_low": -0.02776320776542495,
+    "ci_high": -0.01997179680835223,
+    "share_a_better": 1.0,
+    "n_series": 30490,
+    "n_boot": 1000,
+    "fold": 2,
+    "use_for_tuning": true,
+    "baseline": "ma_4"
+  },
+  {
+    "wape_diff": -0.02685925492176816,
+    "ci_low": -0.030702113512107863,
+    "ci_high": -0.02324867416486439,
+    "share_a_better": 1.0,
+    "n_series": 30490,
+    "n_boot": 1000,
+    "fold": 3,
+    "use_for_tuning": true,
+    "baseline": "ma_4"
+  },
+  {
+    "wape_diff": -0.0269586726456489,
+    "ci_low": -0.030232910909638405,
+    "ci_high": -0.023889241928268162,
+    "share_a_better": 1.0,
+    "n_series": 30490,
+    "n_boot": 1000,
+    "fold": 4,
+    "use_for_tuning": false,
+    "baseline": "ma_4"
+  }
+]
