@@ -1,0 +1,59 @@
+{
+  "bootstrap_holdout_C_vs_B": {
+    "rel_diff": -0.008758307617290684,
+    "ci_low": -0.014235190331035688,
+    "ci_high": -0.0029268756436356264,
+    "share_a_lower": 0.998,
+    "n_series": 30479,
+    "n_boot": 1000
+  },
+  "bootstrap_holdout_C_vs_A": {
+    "rel_diff": -0.09794195869573585,
+    "ci_low": -0.10716192055382316,
+    "ci_high": -0.08947545013440611,
+    "share_a_lower": 1.0,
+    "n_series": 30479,
+    "n_boot": 1000
+  },
+  "metrics_holdout_weeks": [
+    {
+      "lead_time": 2,
+      "cost_ratio": 9,
+      "policy": "A_ma4_fixed_ss",
+      "chosen_setting": 0.5,
+      "critical_ratio": 0.9,
+      "total_cost": 36470.0489,
+      "holding_cost": 18936.2683,
+      "lost_sales_cost": 17533.7806,
+      "fill_rate": 0.9017,
+      "stockout_week_share": 0.1684,
+      "days_of_inventory": 7.065
+    },
+    {
+      "lead_time": 2,
+      "cost_ratio": 9,
+      "policy": "B_normal_ss",
+      "chosen_setting": 0.8,
+      "critical_ratio": 0.9,
+      "total_cost": 33188.7784,
+      "holding_cost": 18711.535,
+      "lost_sales_cost": 14477.2434,
+      "fill_rate": 0.9164,
+      "stockout_week_share": 0.1293,
+      "days_of_inventory": 6.8431
+    },
+    {
+      "lead_time": 2,
+      "cost_ratio": 9,
+      "policy": "C_quantile",
+      "chosen_setting": 0.8,
+      "critical_ratio": 0.9,
+      "total_cost": 32898.1008,
+      "holding_cost": 20550.046,
+      "lost_sales_cost": 12348.0548,
+      "fill_rate": 0.9274,
+      "stockout_week_share": 0.1092,
+      "days_of_inventory": 7.4591
+    }
+  ]
+}
