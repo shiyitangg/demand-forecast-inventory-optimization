@@ -53,3 +53,8 @@ HOLDING_RATE_WEEKLY = 0.25 / 52  # holding cost per unit-week as a share of pric
 MAIN_COST_RATIO = 9  # lost-sale cost / holding cost; critical ratio 0.9
 COST_RATIOS = [4, 9, 19, 49]  # critical ratios 0.8, 0.9, 0.95, 0.98
 FIXED_SAFETY_WEEKS = 1.0  # policy A: safety stock = this many weeks of MA4 demand
+
+# Stage 6: budget-constrained allocation. Each store's budget is a fraction of
+# what it would cost to stock every item at its q0.9 forecast.
+BUDGET_FRACTIONS = [0.5, 0.7, 0.9]
+REFERENCE_TAU = 0.9

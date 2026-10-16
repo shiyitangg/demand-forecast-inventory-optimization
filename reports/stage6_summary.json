@@ -1,0 +1,141 @@
+{
+  "k": 3,
+  "n_origins": 14,
+  "n_series": 30479,
+  "bootstrap_lp_vs_prop_q90_units": {
+    "0.5": {
+      "rel_diff": 0.2667016671346618,
+      "ci_low": 0.25540058413131134,
+      "ci_high": 0.27740551579969824,
+      "share_a_lower": 0.0,
+      "n_series": 30479,
+      "n_boot": 1000
+    },
+    "0.7": {
+      "rel_diff": 0.08427367178899825,
+      "ci_low": 0.07968571101932219,
+      "ci_high": 0.08888480739790619,
+      "share_a_lower": 0.0,
+      "n_series": 30479,
+      "n_boot": 1000
+    },
+    "0.9": {
+      "rel_diff": 0.016776882802065796,
+      "ci_low": 0.015010616100433898,
+      "ci_high": 0.018391656299358006,
+      "share_a_lower": 0.0,
+      "n_series": 30479,
+      "n_boot": 1000
+    }
+  },
+  "means": {
+    "holdout|0.5|lp": {
+      "fill_rate": 0.7958,
+      "revenue": 1649051.147,
+      "budget_used": 0.9834,
+      "expected_units_model": 615447.2168
+    },
+    "holdout|0.5|prop_mean": {
+      "fill_rate": 0.6422,
+      "revenue": 1844828.2326,
+      "budget_used": 0.9658,
+      "expected_units_model": 460926.1337
+    },
+    "holdout|0.5|prop_q90": {
+      "fill_rate": 0.6247,
+      "revenue": 1814439.273,
+      "budget_used": 0.966,
+      "expected_units_model": 451697.7889
+    },
+    "holdout|0.7|lp": {
+      "fill_rate": 0.8979,
+      "revenue": 2213530.5736,
+      "budget_used": 0.9813,
+      "expected_units_model": 696177.3136
+    },
+    "holdout|0.7|prop_mean": {
+      "fill_rate": 0.8421,
+      "revenue": 2422942.9514,
+      "budget_used": 0.9754,
+      "expected_units_model": 642220.4466
+    },
+    "holdout|0.7|prop_q90": {
+      "fill_rate": 0.825,
+      "revenue": 2393719.9315,
+      "budget_used": 0.9758,
+      "expected_units_model": 624597.987
+    },
+    "holdout|0.9|lp": {
+      "fill_rate": 0.9548,
+      "revenue": 2636221.7534,
+      "budget_used": 0.9816,
+      "expected_units_model": 742227.6191
+    },
+    "holdout|0.9|prop_mean": {
+      "fill_rate": 0.9346,
+      "revenue": 2697055.9492,
+      "budget_used": 0.981,
+      "expected_units_model": 726125.8427
+    },
+    "holdout|0.9|prop_q90": {
+      "fill_rate": 0.938,
+      "revenue": 2716515.5406,
+      "budget_used": 0.9809,
+      "expected_units_model": 727885.0063
+    },
+    "pre_holdout|0.5|lp": {
+      "fill_rate": 0.8047,
+      "revenue": 1586784.7001,
+      "budget_used": 0.983,
+      "expected_units_model": 608683.4429
+    },
+    "pre_holdout|0.5|prop_mean": {
+      "fill_rate": 0.66,
+      "revenue": 1795207.6762,
+      "budget_used": 0.9654,
+      "expected_units_model": 459646.0161
+    },
+    "pre_holdout|0.5|prop_q90": {
+      "fill_rate": 0.636,
+      "revenue": 1749577.2283,
+      "budget_used": 0.9655,
+      "expected_units_model": 447401.9091
+    },
+    "pre_holdout|0.7|lp": {
+      "fill_rate": 0.9042,
+      "revenue": 2121786.8241,
+      "budget_used": 0.9811,
+      "expected_units_model": 687325.5971
+    },
+    "pre_holdout|0.7|prop_mean": {
+      "fill_rate": 0.856,
+      "revenue": 2332104.0461,
+      "budget_used": 0.9752,
+      "expected_units_model": 637060.9498
+    },
+    "pre_holdout|0.7|prop_q90": {
+      "fill_rate": 0.8345,
+      "revenue": 2296404.7151,
+      "budget_used": 0.9754,
+      "expected_units_model": 616877.227
+    },
+    "pre_holdout|0.9|lp": {
+      "fill_rate": 0.9588,
+      "revenue": 2515017.3763,
+      "budget_used": 0.9815,
+      "expected_units_model": 731904.9822
+    },
+    "pre_holdout|0.9|prop_mean": {
+      "fill_rate": 0.9419,
+      "revenue": 2575414.3344,
+      "budget_used": 0.9808,
+      "expected_units_model": 715173.93
+    },
+    "pre_holdout|0.9|prop_q90": {
+      "fill_rate": 0.9432,
+      "revenue": 2592035.1251,
+      "budget_used": 0.9808,
+      "expected_units_model": 717500.569
+    }
+  }
+}
